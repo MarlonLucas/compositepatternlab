@@ -10,5 +10,6 @@ class Pow : public Base {
 		virtual double evaluate() { return pow(A->evaluate(), B->evaluate()); }
 		virtual string stringify() { return A->stringify()  + "**" + B->stringify(); }
 	private:
-		Base* A, Base* B;
+		Base* A; Base* B;
+};
 #endif

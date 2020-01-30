@@ -1,13 +1,13 @@
-#ifndef _div_hpp_
-#define _div_hpp_
+#ifndef _DIV_HPP_
+#define _DIV_HPP_
 
 #include "base.hpp"
 
 using namespace std;
 
-class div: public Base {
+class Div: public Base {
 	public:
-		div(Base* A,Base* B) {this->A = A; this->B = B;}
+		Div(Base* A,Base* B) {this->A = A; this->B = B;}
 	
 	
 	virtual double evaluate() {return( A->evaluate() / B->evaluate());}

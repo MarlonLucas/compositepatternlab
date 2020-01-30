@@ -1,20 +1,19 @@
-#ifdef _sub_hpp_
-#define _sub_hpp_
+#ifndef __SUB_HPP__
+#define _SUB_HPP__
 
 #include "base.hpp"
 
 using namespace std;
 
-class sub: public Base {
+class Sub : public Base {
 	public:
-		sub(Base* A, Base* B) {}
-
-		virtual double evaluate() {return A->evaluate() - B->evaluate();}
-		virtual double stringify() {return A->stringify() + " - " B->stringify();}
+		Sub(Base* A, Base* B) : Base() {this->A = A; this->B = B; }
+		virtual double evaluate() { return (A->evaluate() - B->evaluate());}
+		virtual string stringify() { return A->stringify() + " - " + B->stringify(); }
 	private:
 		Base* A;
 		Base* B;
 
-}
+};
 #endif
 
