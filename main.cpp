@@ -21,9 +21,15 @@ int main() {
     Base* add = new Add(three, mult);
     Base* minus = new Sub(add, two);
     Base* divide = new Div(minus, three);
+    Base* rand = new Rand(500);
+    Base* pow = new Pow(three, two);
 
     std::cout << minus->stringify() << " = " << minus->evaluate() << std::endl;
     std::cout << add->stringify() << " = " << add->evaluate() << std::endl;
     std::cout << divide->stringify() << " = " << divide->evaluate() << std::endl;
-    return 0;
+    std::cout << mult->stringify() << " = " << mult->evaluate() << std::endl;
+    std::cout << rand->stringify() << " = " << rand->evaluate() << std::endl;
+    std::cout << pow->stringify() << " = " << pow->evaluate() << std::endl;
+
+return 0;
 }
