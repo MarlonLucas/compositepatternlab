@@ -5,16 +5,16 @@
 #include "rand.hpp"
 
 TEST(RandTest,RandomEvaluate){
-	int randnum = rand() % 100;
-	Rand* test = new Rand(randnum);
-	EXPECT_EQ(test->evaluate(), 86);
+
+	Rand* test = new Rand();
+	EXPECT_EQ(test->evaluate(), test->evaluate());
 
 }
 
 TEST(RandTest, RandomStringify) {
-	int randnum = rand() % 100;
-	Rand* test = new Rand(randnum);
-	EXPECT_EQ(test->stringify(), "77.000000");
+
+	Rand* test = new Rand();
+	EXPECT_EQ(test->stringify(), test->stringify());
 
 
 
