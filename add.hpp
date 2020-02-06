@@ -1,5 +1,5 @@
 #ifndef __ADD_HPP__
-#define _ADD_HPP__
+#define __ADD_HPP__
 
 #include "base.hpp"
 
